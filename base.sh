@@ -58,19 +58,23 @@ EOF
 printf $reset
 }
 #=================================================================
-while [ -n "$1" ]
-do
- case "$1" in
-  -o| --out)
-    out="$2"; shift ;;
-  -v| --version) # version
-    banner; info; shift ;;
-  -h| --help) # help
-    banner;help; shift ;;
-   *) echo -e "${red}Opcion $1 no reconizida.${reset}" ;;
- esac
-shift
-done
+if [ -z "$1" ]
+then banner; help
+else
+  while [ -n "$1" ]
+  do
+   case "$1" in
+    -o| --out)
+      out="$2"; shift ;;
+    -v| --version) # version
+      banner; info; shift ;;
+    -h| --help) # help
+      banner;help; shift ;;
+     *) echo -e "${red}Opcion $1 no reconizida.${reset}" ;;
+   esac
+  shift
+  done
+fi
 #=================================================================
 function main(){
 }
