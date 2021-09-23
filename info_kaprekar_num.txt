@@ -1,0 +1,16 @@
+Un número de Kaprekar es aquel entero no negativo tal que, en una
+base dada, los dígitos de su cuadrado en esa base pueden ser
+separados en dos números que sumados dan el número original.
+
+El ejemplo es el número 703, su cuadrado es 494209.
+
+Si separamos 494209 en dos nuevos números, 494 y 209, obtenemos
+que 494 + 209 = 703.
+
+El segundo número puede comenzar por cero, pero debe ser positivo.
+
+Un ejemplo es 999, ya que 999^2=998001 y se descompone en 998 y 001.
+
+Por esto mismo, el número 100 no es un número de Kaprekar, ya que
+100^2=10000 y se descompone en 100 + 00, pero el segundo sumando
+no es positivo.
