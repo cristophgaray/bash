@@ -1,2 +1,2 @@
 # bash
-Suite de scrip en bash
+Suite de scrips en **bash**
