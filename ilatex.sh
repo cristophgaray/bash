@@ -70,6 +70,8 @@ EOF
 printf $reset
 }
 #=================================================================
+if [ -z "$1" ]; then banner; help
+else
 while [ -n "$1" ]
 do
  case "$1" in
@@ -85,6 +87,7 @@ do
  esac
 shift
 done
+fi
 #=================================================================
 info(){
   declare -a list=('texlive-base' 'texlive-bibtex-extra' \
