@@ -11,7 +11,7 @@ clear -T $TERM
 function banner(){
 printf $green
 wget -qO- 'https://raw.githubusercontent.com/cristophgaray/bash/main/banner'
-echo "ilatex -- github.com/cristophgaray"
+echo "    ilatex -- github.com/cristophgaray"
 printf $reset
 }
 #=================================================================
