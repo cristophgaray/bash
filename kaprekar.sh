@@ -35,10 +35,8 @@ cat <<- 'EOF'
 
  Tittle:      [N]umero & [C]onstante de [K]aprekar
  Autor:       Cristofer Garay
- Description:
-
 EOF
-echo -e " Version:      $version\n"
+echo -e " Version:      $version\n  Description:"
 case "$1" in
    num|number|numero|n|N)
      if [ -e "info_kaprekar_num.txt" ]
