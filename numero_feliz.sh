@@ -77,6 +77,8 @@ EOF
 printf $reset
 }
 #=================================================================
+if [ -z "$1" ]; then banner; help
+else
 while [ -n "$1" ]
 do
  case "$1" in
@@ -86,12 +88,13 @@ do
     banner; info; shift ;;
   -h|--help)
     banner; help; shift ;;
-   *) echo -e "${green}"; banner; help; echo -e "${reset}"
+   *) banner; help;
       echo -e "${red}Opcion $1 no reconizida.${reset}" ;;
  esac
 shift
 done
- #=================================================================
+fi
+#=================================================================
 if [[ -n "$num" && "$num" =~ ^[[:digit:]]+$ ]]
 then
   N=$num
