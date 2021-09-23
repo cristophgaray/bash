@@ -48,6 +48,9 @@ cat <<- 'EOF'
                    13 | 1^2 + 3^2 = 10
                    10 | 1^2 + 0^2 = 1
 
+lista de algunos números felices:
+        {7 ,10 ,31 ,49 ,79 ,94 ,97 ,103 ,130 ,203 ,301 ,310}
+
 EOF
 printf $reset
 }
