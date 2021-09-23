@@ -71,12 +71,22 @@ cat <<- 'EOF'
     -i | --info       Muestra la versión del script y la
                       información a cerca de la constante y
                       el número de Kaprekar.
+                      
+                      [num|number|numero|n|N]:
+                          opciones para ver la informaci+on
+                          a cerca del número de Kaprekar
+                          
+                      [constant|constante|const|c|C]:
+                         opciones para ver la infromación
+                         a cerca de la constante de Kaprekar
+                         
     -h | --help       Muestra la ayuda del script y sale.
 
    Ejemplo:
 
    kaprekar --number 9
-   kaprekar --const 4545
+    
+   kaprekar --info const
 
 EOF
 printf $reset
