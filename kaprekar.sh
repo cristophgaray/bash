@@ -36,19 +36,19 @@ cat <<- 'EOF'
  Tittle:      [N]umero & [C]onstante de [K]aprekar
  Autor:       Cristofer Garay
 EOF
-echo -e " Version:      $version\n  Description:"
+echo -e " Version:      $version\n Description:\n\n"
 case "$1" in
    num|number|numero|n|N)
      if [ -e "info_kaprekar_num.txt" ]
-     then cat info_kaprekar_num.txt
-     else echo "https://en.wikipedia.org/wiki/Kaprekar_number"
+     then cat info_kaprekar_num.txt; echo
+     else echo -e "https://en.wikipedia.org/wiki/Kaprekar_number\n"
      fi ;;
   constant|constante|const|c|C)
      if [ -e "info_kaprekar_const.txt" ]
      then
-       cat info_kaprekar_const.txt
+       cat info_kaprekar_const.txt; echo
      else
-       echo "https://en.wikipedia.org/wiki/Kaprekar%27s_routine"
+       echo -e "https://en.wikipedia.org/wiki/Kaprekar%27s_routine\n"
      fi
   ;;
   esac
