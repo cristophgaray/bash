@@ -108,4 +108,4 @@ then
   fi
 fi
 #================================================================================
- unset N txt chr id nL nR L R help
+ unset N txt chr id nL nR L R help banner info 
