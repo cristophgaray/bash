@@ -3,7 +3,7 @@ reset="\\e[0m"
 red="\\e[31;1m"
 green="\\e[32;1m"
 version="1.0.0v"
-clear -T $TERM
+#clear -T $TERM
 #=================================================================
 function banner(){
 printf $green
