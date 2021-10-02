@@ -1,9 +1,7 @@
 #!/bin/bash
 reset="\\e[0m"
 red="\\e[31;1m"
-blue="\\e[34;1m"
 green="\\e[32;1m"
-yellow="\\e[33;1m"
 white="\\e[39;1m"
 version="1.0.0v"
 clear -T $TERM
@@ -121,3 +119,5 @@ then
   esac
 fi
 #=================================================================
+unset reset red green white version banner info help opt out list \
+out
