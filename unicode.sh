@@ -201,3 +201,6 @@ then
       fi ;;
   esac
 fi
+#=================================================================
+unset reset red green version  scp nscp acvo a utf dec2hex \
+banner info help name text opt code
