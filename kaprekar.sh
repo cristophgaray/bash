@@ -197,3 +197,4 @@ then
           " solo se permiten números con 4 dígitos"
 fi
 #=================================================================
+unset uno dos
