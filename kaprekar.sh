@@ -39,18 +39,20 @@ EOF
 echo -e " Version:      $version\n Description:\n\n"
 case "$1" in
    num*|n|N)
-     if [ -e "info_kaprekar_num.txt" ]
-     then cat info_kaprekar_num.txt; echo
-     else echo -e "https://en.wikipedia.org/wiki/Kaprekar_number\n"
-     fi ;;
+      if ping -c1 google.com &>/dev/null;
+      then
+       wget -nv \
+"https://raw.githubusercontent.com/cristophgaray/bash/main/info_kaprekar_num.txt" \
+-qO-
+      else exit; fi;;
   const*|c|C)
-     if [ -e "info_kaprekar_const.txt" ]
-     then
-       cat info_kaprekar_const.txt; echo
-     else
-       echo -e "https://en.wikipedia.org/wiki/Kaprekar%27s_routine\n"
-     fi
-  ;;
+      if ping -c1 google.com &>/dev/null;
+      then
+       wget -nv \
+"https://raw.githubusercontent.com/cristophgaray/bash/main/info_kaprekar_const.txt" \
+-qO-
+      else exit; fi;;
+  const*|c|C)
   esac
 printf $reset
 }
