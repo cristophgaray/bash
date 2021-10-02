@@ -197,4 +197,5 @@ then
           " solo se permiten números con 4 dígitos"
 fi
 #=================================================================
-unset uno dos
+unset green red yellow white reset verison banner info help num \
+const N uno dos n i start
