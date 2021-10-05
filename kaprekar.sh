@@ -41,14 +41,18 @@ case "$1" in
        wget -nv \
 "https://raw.githubusercontent.com/cristophgaray/bash/main/info_kaprekar_num.txt" \
 -qO-
-      else exit; fi;;
+      else
+        echo "consultar en:"\
+        " https://es.wikipedia.org/wiki/N%C3%BAmero_de_Kaprekar"; fi;;
   const*|c|C)
       if ping -c1 google.com &>/dev/null;
       then
        wget -nv \
 "https://raw.githubusercontent.com/cristophgaray/bash/main/info_kaprekar_const.txt" \
 -qO-
-      else exit; fi;;
+      else
+        echo "Consultar en: "\
+        "https://es.wikipedia.org/wiki/Constante_de_Kaprekar"; fi;;
   const*|c|C)
   esac
 printf $reset
