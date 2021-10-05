@@ -53,7 +53,6 @@ case "$1" in
       else
         echo "Consultar en: "\
         "https://es.wikipedia.org/wiki/Constante_de_Kaprekar"; fi;;
-  const*|c|C)
   esac
 printf $reset
 }
