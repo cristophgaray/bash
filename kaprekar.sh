@@ -9,9 +9,20 @@ version="1.0.0v"
 #=================================================================
 function banner(){
 printf ${green}
-wget -qO- 'https://raw.githubusercontent.com/cristophgaray/bash/main/banner'
-echo -e \
-"[N]umero & [C]onstante de [K]aprekar -- github.com/cristophgaray\n"
+cat <<- 'EOF'
+ .d8888b.
+d88'  '88b
+888    888              ooooooooooooo                   oooo
+888                     8'   888   '8                    888
+888  88888                   888                         888
+888    888    888            888     .ooooo.   .ooooo.   888
+'888  8888    888   88888    888    d88' '88b d88' '88b  888
+ 'Y8888P88    888            888    888   888 888   888  888
+       8888888888            888    888   888 888   888  888
+       888    888           o888o   'Y8bod8P' 'Y8bod8P' o888o
+       888    888      [N]umero & [C]onstante de [K]aprekar
+       888    888      github.com/cristophgaray
+EOF
 printf ${reset}
 }
 #=================================================================
